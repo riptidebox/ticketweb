@@ -1,30 +1,51 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="style.css" />
-    <title>Создать заявку</title>
-  </head>
-  <body>
-    <div class="create-ticket-container">
-      <h1>Создать новую заявку</h1>
-      <form id="create-ticket-form">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css">
+  <title>Создать заявку</title>
+  <header class="header">
+    <h1 class="header-title">Тикетная система</h1>
+    <nav class="header-nav">
+      <ul class="nav-list">
+        <li class="nav-item"><a href="#" class="nav-link">Мои заявки</a></li>
+        <li class="nav-item">
+          <li class="nav-item"><a href="create.html" class="nav-link">Создать заявку</a></li>
+        </li>
+        <li class="nav-item"><a href="#" class="nav-link">Выйти</a></li>
+      </ul>
+    </nav>
+  </header>
+</head>
+<body>
+  <div class="create-ticket-container">
+    <h1>Создать новую заявку</h1>
+    <form id="create-ticket-form">
+      <div class="form-group">
         <label for="title">Заголовок</label>
         <input type="text" id="title" name="title" required />
+      </div>
 
+      <div class="form-group">
         <label for="description">Описание</label>
-        <textarea
-          id="description"
-          name="description"
-          rows="4"
-          required
-        ></textarea>
+        <textarea id="description" name="description" rows="4" required></textarea>
+      </div>
 
-        <button type="submit">Отправить заявку</button>
-      </form>
-    </div>
+      <div class="form-group">
+        <label for="deadline">Срок выполнения</label>
+        <input type="date" id="deadline" name="deadline" required />
+      </div>
 
-    <script src="create-ticket-script.js"></script>
-  </body>
+      <div class="form-group">
+        <label for="assignee">Исполнитель</label>
+        <input type="text" id="assignee" name="assignee" required />
+      </div>
+
+      <button type="submit">Отправить заявку</button>
+    </form>
+  </div>
+
+  <script src="create-ticket-script.js"></script>
+</body>
 </html>
