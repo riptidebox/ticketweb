@@ -1,0 +1,109 @@
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+.header {
+  background-color: #007bff;
+  color: #fff;
+  padding: 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.header-title {
+  margin: 0;
+  font-size: 24px;
+}
+
+.header-nav {
+  display: flex;
+  gap: 20px;
+}
+
+.nav-list {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  gap: 20px;
+}
+
+.nav-item {
+  margin: 0;
+}
+
+.nav-link {
+  text-decoration: none;
+  color: #fff;
+  font-weight: bold;
+  transition: color 0.3s;
+}
+
+.nav-link:hover {
+  color: #f0f0f0;
+}
+
+.main-content {
+  padding: 20px;
+}
+
+.main-title {
+  font-size: 24px;
+  margin-bottom: 20px;
+}
+
+.ticket-list {
+  display: grid;
+  gap: 20px;
+}
+
+.ticket {
+  background-color: #f9f9f9;
+  border: 1px solid #ddd;
+  padding: 20px;
+  border-radius: 4px;
+}
+
+.ticket-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 10px;
+}
+
+.ticket-title {
+  margin: 0;
+}
+
+.ticket-status {
+  padding: 4px 10px;
+  border-radius: 4px;
+  color: #fff;
+}
+
+/* ... (ваш предыдущий CSS код) */
+
+.footer {
+  background-color: #333;
+  color: #fff;
+  text-align: center;
+  padding: 20px;
+}
+
+.footer-text {
+  margin: 0;
+  font-size: 14px;
+}
+
+.footer-link {
+  color: #fff;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.footer-link:hover {
+  text-decoration: underline;
+}

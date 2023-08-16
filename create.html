@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <title>Создать заявку</title>
+  </head>
+  <body>
+    <div class="create-ticket-container">
+      <h1>Создать новую заявку</h1>
+      <form id="create-ticket-form">
+        <label for="title">Заголовок</label>
+        <input type="text" id="title" name="title" required />
+
+        <label for="description">Описание</label>
+        <textarea
+          id="description"
+          name="description"
+          rows="4"
+          required
+        ></textarea>
+
+        <button type="submit">Отправить заявку</button>
+      </form>
+    </div>
+
+    <script src="create-ticket-script.js"></script>
+  </body>
+</html>
